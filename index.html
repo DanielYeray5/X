@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Árbol de Decisión</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background-color: #bac0ba;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        .container {
+            width: 80%;
+            margin: 20px auto;
+            background: white;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1, h2, h3 {
+            color: #4CAF50;
+        }
+        pre {
+            background: #f4f4f4;
+            padding: 10px;
+            border: 1px solid #ddd;
+            overflow: auto;
+        }
+        .graph-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        .graph-container img {
+            border: 1px solid #ddd;
+            padding: 5px;
+            background: #fff;
+            width: 80%; /* Ajusta el tamaño de las imágenes */
+            max-width: 800px; /* Asegura que las imágenes no sean demasiado grandes */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Resultados del Modelo de Árbol de Decisión</h1>
+    </header>
+    <div class="container">
+        <h2>Recall</h2>
+        <pre>0.98176</pre>
+        <h2>Puntuación F1-Score</h2>
+        <pre>0.99176</pre>
+        <h2>Gráficas Generadas</h2>
+        <div class="graph-container">
+            <h3>Matriz de Correlación</h3>
+            <img src="static/correlation_matrix.png" alt="Matriz de correlación">
+        </div>
+        <div class="graph-container">
+            <h3>Árbol de Decisión</h3>
+            <img src="static/decision_tree.png" alt="Árbol de decisión">
+        </div>
+        <div class="graph-container">
+            <h3>Límite de Decisión</h3>
+            <img src="static/decision_boundary.png" alt="Límite de decisión">
+        </div>
+    </div>
+</body>
+</html>
